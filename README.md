@@ -1,68 +1,58 @@
-# CodeIgniter 4 Application Starter
+# 📢 Sistem Pengaduan Masyarakat Berbasis Web — LBH Nawasena
 
-## What is CodeIgniter?
+## 📌 About This Project
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+This project is a **Web-Based Public Complaint Management System** developed for **LBH Nawasena**, a legal aid institution based in Pekanbaru, Riau. The system was designed to modernize and streamline the process of receiving, managing, and resolving public complaints that were previously handled manually.
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+By digitalizing the complaint workflow, this system enables citizens to submit their legal complaints online, track the progress of their cases in real time, and receive updates without the need for physical visits — making legal aid services more accessible, transparent, and efficient.
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+---
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+## 🎯 Objectives
 
-## Installation & updates
+- Provide an accessible digital platform for the public to submit legal complaints to LBH Nawasena.
+- Streamline complaint management and tracking for administrators.
+- Improve transparency between complainants and the legal aid institution.
+- Replace manual, paper-based processes with an efficient digital workflow.
+- Ensure data security and role-based access across different user levels.
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+---
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+## ✨ Features
 
-## Setup
+### 👥 Public / User Side
+- Online complaint submission form
+- Real-time complaint status tracking
+- Complaint history and detail view
+- User registration and authentication
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+### 🛠️ Admin Side
+- Comprehensive admin dashboard
+- Complaint management (receive, review, update, resolve)
+- Complaint categorization and filtering
+- Status update with notification to complainant
+- Data reporting and complaint summary
 
-## Important Change with index.php
+### ⚖️ Lawyer / Legal Staff Side
+- Dedicated lawyer dashboard
+- View and manage assigned complaints & cases
+- Case detail review including complainant information and 
+  complaint description
+- Update case progress and handling status
+- Internal notes & case documentation management
+- Communication log with complainant through the system
+- Case history and resolution record
+- Printable case report for legal documentation purposes
+---
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+## 🧰 Tech Stack
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+| Technology | Role |
+|---|---|
+| **CodeIgniter 4 (CI4)** | Backend MVC Framework |
+| **PHP** | Server-side scripting |
+| **MySQL** | Relational database management |
+| **Bootstrap 5** | Responsive front-end UI framework |
+| **JavaScript (ES6)** | Dynamic client-side interactions |
 
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Server Requirements
-
-PHP version 8.1 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+---
