@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Surat Kuasa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="text-center">SURAT KUASA</h2>
+    <p>Nomor: <?= $suratKuasa['nomor_surat']; ?></p>
+
+    <p>Yang bertandatangan di bawah ini:</p>
+    <ul>
+        <li>Nama: <?= $suratKuasa['nama_pemberi']; ?></li>
+        <li>Jenis Kelamin: <?= $suratKuasa['jenis_kelamin_pemberi']; ?></li>
+        <li><?= $suratKuasa['ttl_pemberi']; ?></li>
+        <li>Alamat: <?= $suratKuasa['alamat_pemberi']; ?></li>
+
+    </ul>
+    <p>Selanjutnya disebut sebagai PEMEBERI KUASA.</p>
+
+    <p>Dengan ini memberikan kuasa penuh kepada:</p>
+    <ul>
+        <li>Nama: <?= $suratKuasa['nama_penerima']; ?></li>
+        <li>Profesi: <?= $suratKuasa['pekerjaan_penerima']; ?></li>
+        <li>Alamat: <?= $suratKuasa['alamat_penerima']; ?></li>
+        <li>Kontak: <?= $suratKuasa['kantor_penerima']; ?></li>
+    </ul>
+
+
+
+    <p>Demikianlah Surat Kuasa ini dibuat untuk dipergunakan sebagaimana mestinya.</p>
+
+    <p><?= $suratKuasa['tempat_dikeluarkan']; ?>, <?= $suratKuasa['tanggal_dikeluarkan']; ?></p>
+    <table width="100%">
+        <tr>
+            <td class="text-center">PEMBERI KUASA</td>
+            <td class="text-center">PENERIMA KUASA</td>
+        </tr>
+        <tr>
+            <td class="text-center" style="padding-top: 60px;"><?= $suratKuasa['nama_pemberi']; ?></td>
+            <td class="text-center" style="padding-top: 60px;"><?= $suratKuasa['nama_penerima']; ?></td>
+        </tr>
+    </table>
+</body>
+
+</html>
