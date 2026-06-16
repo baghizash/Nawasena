@@ -1,5 +1,12 @@
 # 📢 Sistem Pengaduan Masyarakat Berbasis Web — LBH Nawasena
 
+![CI4](https://img.shields.io/badge/CodeIgniter-4-EF4223?style=for-the-badge&logo=codeigniter&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+
 ## 📌 About This Project
 
 This project is a **Web-Based Public Complaint Management System** developed for **LBH Nawasena**, a legal aid institution based in Pekanbaru, Riau. The system was designed to modernize and streamline the process of receiving, managing, and resolving public complaints that were previously handled manually.
